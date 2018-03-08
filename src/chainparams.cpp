@@ -105,10 +105,10 @@ public:
          * The characters are rarely used upper ASCII, not valid as UTF-8, and produce
          * a large 32-bit integer with any alignment.
          */
-        pchMessageStart[0] = 0xbf;
-        pchMessageStart[1] = 0xc2;
-        pchMessageStart[2] = 0xd4;
-        pchMessageStart[3] = 0xbd;
+        pchMessageStart[0] = 0xb1;
+        pchMessageStart[1] = 0xc5;
+        pchMessageStart[2] = 0xd9;
+        pchMessageStart[3] = 0xb4;
         nDefaultPort = 9333;
         nPruneAfterHeight = 100000;
 
@@ -118,7 +118,7 @@ public:
         assert(genesis.hashMerkleRoot == uint256S("0x3a3da343f9623f0e70ee7cae816fb600583f72bccd109c197adda0d04a2cef35"));
 
         // Note that of those with the service bits flag, most only support a subset of possible options
-        vSeeds.push_back(CDNSSeedData("euncointools.com", "104.131.70.27"));
+        vSeeds.push_back(CDNSSeedData("euncoin-tools.com", "dnsseed.euncoin-tools.com"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,48);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,5);
@@ -200,7 +200,7 @@ public:
         vFixedSeeds.clear();
         vSeeds.clear();
         // nodes with support for servicebits filtering should be at the top
-        vSeeds.push_back(CDNSSeedData("euncointools.com", "104.131.70.28"));
+        vSeeds.push_back(CDNSSeedData("euncoin-tools.com", "dnsseed.euncoin-tools.com"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,111);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,196);
